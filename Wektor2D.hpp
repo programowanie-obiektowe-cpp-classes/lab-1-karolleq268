@@ -45,7 +45,7 @@ public:
     {
         return x * A.x + y * A.y;
     }
-
+private:
     double x;
     double y;
 };
