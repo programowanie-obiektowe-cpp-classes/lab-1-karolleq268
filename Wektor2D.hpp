@@ -1,3 +1,5 @@
+using namespace std;
+
 class Wektor2D
 {
 public:
