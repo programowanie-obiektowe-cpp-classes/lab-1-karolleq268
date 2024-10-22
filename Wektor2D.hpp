@@ -41,7 +41,7 @@ public:
         return Wektor2D{x + A.x, y + A.y};
     }
     
-    int operator*(Wektor2D& A)
+    double operator*(Wektor2D& A)
     {
         return x * A.x + y * A.y;
     }
