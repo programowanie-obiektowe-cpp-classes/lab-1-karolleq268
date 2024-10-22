@@ -35,17 +35,17 @@ public:
     {
         cout<<"Wspolzedna x: "<<x<<endl<<"Wspolzedna y: "<<y<<endl;
     }
+    
+    Wektor2D operator+(Wektor2D& A)
+    {
+        return Wektor2D{x + A.x, y + A.y};
+    }
+    
+    int operator*(Wektor2D& A)
+    {
+        return x * A.x + y * A.y;
+    }
 
     double x;
     double y;
 };
-
-Wektor2D operator+(Wektor2D w1, Wektor2D w2)
-{
-    return Wektor2D{w1.x + w2.x, w1.y + w2.y};
-}
-
-int operator*(Wektor2D w1, Wektor2D w2)
-{
-    return w1.x * w2.x + w1.y * w2.y;
-}
